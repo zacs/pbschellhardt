@@ -20,6 +20,9 @@
   ================================================== -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140216/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="htpps://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.6.1/bootstrap-lightbox.min.js"></script>
+
+
 
     <!-- CSS
   ================================================== -->
@@ -28,6 +31,7 @@
     <link rel="stylesheet" href="/stylesheets/skeleton.css">
     <link rel="stylesheet" href="/stylesheets/layout.css">
     <link rel="stylesheet" href="/stylesheets/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.6.1/bootstrap-lightbox.min.css">
 
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -65,16 +69,19 @@
             <h2 class="menu"><a href="/contact">Contact</a></h2>
         </div>
         <div class="one-third column">
-            <img class="scale-with-grid" src="/images/cup_of_christ.jpg">
-            <img class="scale-with-grid" src="/images/cups.jpg">
-            <img class="scale-with-grid" src="/images/tribowl.jpg">
+            <a data-toggle="lightbox" href="#lightbox"><img class="scale-with-grid" src="/images/cup_of_christ.jpg"></a>
+            <a data-toggle="lightbox" href="#lightbox"><img class="scale-with-grid" src="/images/cups.jpg"></a>
+            <a data-toggle="lightbox" href="#lightbox"><img class="scale-with-grid" src="/images/tribowl.jpg"></a>
         </div>
         <div class="one-third column">
-            <img class="scale-with-grid" src="/images/egg_holder.jpg">
-            <img class="scale-with-grid" src="/images/tall_bowl.jpg">
+            <a data-toggle="lightbox" href="#lightbox"><img class="scale-with-grid" src="/images/egg_holder.jpg"></a>
+            <a data-toggle="lightbox" href="#lightbox"><img class="scale-with-grid" src="/images/tall_bowl.jpg"></a>
         </div>
     </div><!-- container -->
 
+    <div id="lightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class='lightbox-content'> </div>
+    </div>
 
 <!-- End Document
 ================================================== -->
